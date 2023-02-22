@@ -10,11 +10,11 @@
 </template>
 
 <script>
-
+//지역컴포넌트는 위의 템플릿에만 적용가능
 import LocalComponent from '@/components/lecture/componentTest/LocalComponent.vue'
 
 export default {
-    name: "ComponentTest",
+    name: "ComponentTest", // 현재는 name 속성이 쓰이지 않음
     components: {
       'local-component': LocalComponent
     },
