@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import BindTest from "@/views/lecture/bind/BindTest.vue"
+import ClickEventTest from "@/views/lecture/clickEvent/ClickEventTest.vue"
 
 Vue.use(VueRouter)
 
@@ -15,6 +16,11 @@ const routes = [
     path: '/bind-test',
     name: 'BindTest',
     component: BindTest
+  },
+  {
+    path: '/click-test',
+    name: 'ClickEventTest',
+    component: ClickEventTest
   },
 ]
 

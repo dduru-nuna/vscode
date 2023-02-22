@@ -17,7 +17,7 @@ export default{
             message: "test",
             msg: "이렇게 html과 javascript를 변수화하여 연결 할 수 있음",
             list: ['apple', 'banana', 'grape', 'watermelon'],
-            number: 1,
+            number: 2,
         }
     }
 }
