@@ -3,9 +3,10 @@ import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import BindTest from "@/views/lecture/bind/BindTest.vue"
 import ClickEventTest from "@/views/lecture/clickEvent/ClickEventTest.vue"
+import ComponentTest from "@/views/lecture/componentTest/ComponentTest.vue"
 
 Vue.use(VueRouter)
-
+// url 맵핑
 const routes = [
   {
     path: '/',
@@ -21,6 +22,11 @@ const routes = [
     path: '/click-test',
     name: 'ClickEventTest',
     component: ClickEventTest
+  },
+  {
+    path: '/component-test',
+    name: 'ComponentTest',
+    component: ComponentTest
   },
 ]
 
