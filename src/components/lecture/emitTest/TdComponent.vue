@@ -31,6 +31,7 @@ export default {
             this.changeTurn()
         },
         changeTurn () {
+            //현재 턴이 'O'라면 'X'를 'updateTurnShape'라는 이벤트 값으로 저장해서 상위로 보냄
             this.game.propsTurnShape = this.currentTurnShape === 'O' ? 'X' : 'O'
             this.$emit('updateTurnShape', this.game.propsTurnShape) 
             //emit 은 하위에서 상위로 보냄

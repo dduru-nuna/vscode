@@ -24,18 +24,18 @@ export default {
         return {
             currentTurnShape: 'O',
             tableData: [
-                ['', '', '', ''],
-                ['', '', '', ''],
-                ['', '', '', ''],
-                ['', '', '', ''],
-                ['', '', '', ''],
+                ['', '', '', '', ''],
+                ['', '', '', '', ''],
+                ['', '', '', '', ''],
+                ['', '', '', '', ''],
+                ['', '', '', '', ''],
             ]
         }
     },
     methods: {
         updateTurnShape (receivedTurnShape) {
             console.log('Board Game Component received Table Component info: ' + receivedTurnShape)
-
+            //하위에서 전달받은 턴 값을 currentTurnShape로 저장
             this.currentTurnShape = receivedTurnShape;
         }
     }

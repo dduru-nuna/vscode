@@ -13,7 +13,7 @@
         v-for="(rowData, index) in tableData" :key="index"
         :row-data="rowData"
         :row-index="index"
-        :tableData="tableData"
+        :table-data="tableData"
         :current-turn-shape="currentTurnShape"
         @updateTurnShape="updateTurnShape"/>
   </table>
@@ -32,11 +32,13 @@ export default {
         currentTurnShape: String,
     },
     methods: {
+        // TrComponent에서 전달된 턴 값이 매개변수로 사용
         updateTurnShape (receivedTurnShape) {
             console.log('Table Component received Tr Component info: ' + receivedTurnShape)
 
             this.turnShape = receivedTurnShape;
             this.$emit('updateTurnShape', this.turnShape)
+            //다시 또 상위로 전달. view의 EmitTestBoardGame.vue로 전달된다.
         }
     }
 }

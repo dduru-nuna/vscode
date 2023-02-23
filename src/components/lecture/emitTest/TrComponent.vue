@@ -37,11 +37,13 @@ export default {
         currentTurnShape: String,
     },
     methods: {
+        //위 @updateTurnShape 로 이 메서드 동작 (TdComponent에서 전달된 턴 값이 매개변수로 사용)
         updateTurnShape (receivedTurnShape) {
             console.log('Tr Component received Td Component info: ' + receivedTurnShape)
 
             this.turnShape = receivedTurnShape;
             this.$emit('updateTurnShape', this.turnShape)
+            //다시 또 상위로 턴 값 전달
         }
     }
 }
