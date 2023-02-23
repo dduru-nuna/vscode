@@ -6,6 +6,7 @@
         <router-link to="/bind-test">BindTest</router-link> |
         <router-link to="/click-test">클릭 테스트</router-link> |
         <router-link to="/component-test">component테스트</router-link> |
+        <router-link to="/emit-test-board-game">emit 테스트(보드게임)</router-link> |
       </nav>
       <router-view/>
     </div>
