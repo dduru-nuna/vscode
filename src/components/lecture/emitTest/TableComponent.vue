@@ -15,7 +15,9 @@
         :row-index="index"
         :table-data="tableData"
         :current-turn-shape="currentTurnShape"
-        @updateTurnShape="updateTurnShape"/>
+        @updateTurnShape="updateTurnShape"
+        @updateWinner="updateWinner"
+        @updateTableData="updateTableData"/>
   </table>
 </template>
 
@@ -39,6 +41,13 @@ export default {
             this.turnShape = receivedTurnShape;
             this.$emit('updateTurnShape', this.turnShape)
             //다시 또 상위로 전달. view의 EmitTestBoardGame.vue로 전달된다.
+        },
+        updateWinner (receivedWinner) {
+            console.log("Table Component: winner received")
+            this.$emit('updateWinner', receivedWinner)
+        },
+        updateTableData () {
+            this.$emit('updateTableData')
         }
     }
 }
