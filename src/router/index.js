@@ -7,6 +7,8 @@ import ComponentTest from "@/views/lecture/componentTest/ComponentTest.vue"
 
 import EmitTestBoardGame from '@/views/lecture/emitTest/EmitTestBoardGame.vue'
 
+import AxiosTestPage from '@/views/lecture/axiosTest/AxiosTestPage.vue'
+
 Vue.use(VueRouter)
 // url 맵핑
 const routes = [
@@ -34,6 +36,11 @@ const routes = [
     path: '/emit-test-board-game',
     name: 'EmitTestBoardGame',
     component: EmitTestBoardGame
+  },
+  {
+    path: '/axios-test-page',
+    name: 'AxiosTestPage',
+    component: AxiosTestPage
   },
 ]
 
