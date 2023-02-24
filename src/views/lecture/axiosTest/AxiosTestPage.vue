@@ -18,6 +18,7 @@ export default {
     methods: {
         onSubmit (payload) {
             const { memberName, major } = payload
+            //post 방식으로 url에 데이터 보냄
             axios.post('http://localhost:7777/vue/first/receive-test',
                 { memberName, major }
             )

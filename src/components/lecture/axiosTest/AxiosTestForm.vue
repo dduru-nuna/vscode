@@ -1,4 +1,5 @@
 <template>
+    <!--.prevent : 기본 이벤트를 막아줌, 원래 submit 을 누르면 제출이 실행되야 하지만 onSubmit이라는 메서드를 실행하게 함-->
     <form @submit.prevent="onSubmit">
         <table>
             <tr>
